@@ -23,9 +23,8 @@ export default class CardBack extends Component {
     return (
       <div className="card-back">
       <h3 className="title">{this.props.title}</h3>
-        <h3 className="title"></h3>
         <span />
-        { /* your rating element should go here -- you can invoke methods within JSX, à la: this.myMethod() */ }
+        {this.generateRatingElement()}
         <span />
         <h5 className="genres"></h5>
       </div>
